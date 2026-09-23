@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.carmilaglow.controller.ProductoController">
+   <children>
+      <BorderPane layoutX="261.0" layoutY="66.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="178.0" layoutY="57.0" text="Gestión de Productos" />
+      <TableView fx:id="tablaProductos" layoutX="14.0" layoutY="139.0" prefHeight="200.0" prefWidth="575.0" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="139.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="56.79998338222504" text="Código" />
+          <TableColumn fx:id="colNombre" prefWidth="111.20001983642578" text="Nombre" />
+            <TableColumn fx:id="colDescripcion" minWidth="0.0" prefWidth="144.00001525878906" text="Descripción" />
+            <TableColumn fx:id="colMarca" prefWidth="103.20001220703125" text="Marca" />
+            <TableColumn fx:id="colStock" prefWidth="40.0" text="Stock" />
+            <TableColumn fx:id="colStMin" prefWidth="67.19998168945312" text="Stock Mín" />
+            <TableColumn fx:id="colPreCosto" prefWidth="76.800048828125" text="Pre. Costo" />
+            <TableColumn fx:id="colPrePublico" prefWidth="86.39996337890625" text="Pre. Publico" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
