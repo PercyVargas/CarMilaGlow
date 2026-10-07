@@ -1,0 +1,128 @@
+/* =====================================================
+   CarMila Glow
+   Estilo del menú principal
+   ===================================================== */
+
+
+/* -----------------------------------------------------
+   TÍTULOS DE LAS SECCIONES
+   ----------------------------------------------------- */
+
+.titulo-seccion {
+
+    -fx-text-fill: #006B68;
+
+    -fx-font-size: 12px;
+
+    -fx-font-weight: bold;
+
+    -fx-letter-spacing: 2px;
+
+    -fx-padding: 10px 0 2px 0;
+}
+
+
+/* -----------------------------------------------------
+   INFORMACIÓN DEL USUARIO
+   ----------------------------------------------------- */
+
+.usuario-label {
+
+    -fx-text-fill: #777777;
+
+    -fx-font-size: 13px;
+
+    -fx-font-weight: normal;
+}
+
+
+/* -----------------------------------------------------
+   BOTONES PRINCIPALES
+   ----------------------------------------------------- */
+
+.menu-button {
+
+    -fx-pref-width: 300px;
+
+    -fx-pref-height: 38px;
+
+    -fx-background-color: white;
+
+    -fx-text-fill: #444444;
+
+    -fx-font-size: 13px;
+
+    -fx-font-weight: normal;
+
+    -fx-background-radius: 8px;
+
+    -fx-border-radius: 8px;
+
+    -fx-border-color: #E8D8C8;
+
+    -fx-border-width: 1px;
+
+    -fx-cursor: hand;
+}
+
+
+/* -----------------------------------------------------
+   CUANDO PASAMOS EL MOUSE
+   ----------------------------------------------------- */
+
+.menu-button:hover {
+
+    -fx-background-color: #E86A93;
+
+    -fx-text-fill: white;
+
+    -fx-border-color: #E86A93;
+}
+
+
+/* -----------------------------------------------------
+   CUANDO HACEMOS CLICK
+   ----------------------------------------------------- */
+
+.menu-button:pressed {
+
+    -fx-background-color: #D68520;
+
+    -fx-text-fill: white;
+}
+
+
+/* -----------------------------------------------------
+   CERRAR SESIÓN
+   ----------------------------------------------------- */
+
+.logout-button {
+
+    -fx-pref-width: 300px;
+
+    -fx-pref-height: 38px;
+
+    -fx-background-color: transparent;
+
+    -fx-text-fill: #B65C68;
+
+    -fx-font-size: 13px;
+
+    -fx-border-color: #E8B8BE;
+
+    -fx-border-radius: 8px;
+
+    -fx-background-radius: 8px;
+
+    -fx-cursor: hand;
+}
+
+
+.logout-button:hover {
+
+    -fx-background-color: #B65C68;
+
+    -fx-text-fill: white;
+
+    -fx-border-color: #B65C68;
+}

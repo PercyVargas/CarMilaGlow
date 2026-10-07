@@ -4,15 +4,30 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.example.carmilaglow.database.DatabaseInitializer;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class MenuApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        DatabaseInitializer.crearTablaProducto();
+        DatabaseInitializer.crearTablaCategoria();
+        DatabaseInitializer.crearTablaProveedor();
+        DatabaseInitializer.crearTablaMovimiento();
+        DatabaseInitializer.crearTablaUsuario();
+
+        DatabaseInitializer.crearTablaCliente();
+
+        DatabaseInitializer.crearTablaCompra();
+        DatabaseInitializer.crearTablaDetalleCompra();
+
+        DatabaseInitializer.crearTablaVenta();
+        DatabaseInitializer.crearTablaDetalleVenta();
+
+        FXMLLoader fxmlLoader = new FXMLLoader(MenuApplication.class.getResource("/menu.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("CarMila Glow");
         stage.setScene(scene);
         stage.show();
     }

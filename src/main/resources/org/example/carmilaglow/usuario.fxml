@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.carmilaglow.controller.UsuarioController">
+   <children>
+      <BorderPane layoutX="39.0" layoutY="15.0" prefHeight="382.0" prefWidth="393.0">
+         <top>
+            <Label text="GENSTIÓN DE USUARIOS" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Century" size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+         </top>
+         <center>
+            <VBox alignment="CENTER" prefHeight="311.0" prefWidth="453.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="218.20001220703125" minWidth="10.0" prefWidth="97.59998779296875" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="341.39996337890625" minWidth="10.0" prefWidth="284.8000122070313" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="USUARIO:">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="CONTRASEÑA:" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="ROL:" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <PasswordField fx:id="txtPassword" prefHeight="26.0" prefWidth="270.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtNombreUsuario" prefHeight="26.0" prefWidth="250.0" GridPane.columnIndex="1" />
+                        <ComboBox fx:id="cmbRol" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="ADMI" />
+                                    <String fx:value="CONSULTAR" />
+                                </FXCollections>
+                            </items>
+                        </ComboBox>
+                     </children>
+                  </GridPane>
+                  <Button fx:id="btnGuardarUsuario" mnemonicParsing="false" onAction="#guardarUsuario" text="AGREGAR USUARIO">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <TableView fx:id="tablaUsuarios" prefHeight="199.0" prefWidth="382.0">
+                    <columns>
+                      <TableColumn fx:id="colNombreUsuario" prefWidth="239.20001220703125" text="USUARIO" />
+                      <TableColumn fx:id="colRol" minWidth="0.0" prefWidth="138.39996337890625" text="ROL" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TableView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

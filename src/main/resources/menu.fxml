@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: #FFF9F5;" stylesheets="@css/menu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.carmilaglow.controller.MenuController">
+
+    <children>
+
+        <VBox alignment="TOP_CENTER" prefWidth="500.0" spacing="10.0">
+
+            <padding>
+                <Insets bottom="25" left="60" right="60" top="25" />
+            </padding>
+
+
+            <!-- ================================= -->
+            <!-- LOGO -->
+            <!-- ================================= -->
+
+            <ImageView fitHeight="105.0" fitWidth="170.0" preserveRatio="true">
+
+                <image>
+                    <Image url="@images/Logo-CarMilaVarios.jpg" />
+                </image>
+
+            </ImageView>
+
+
+            <!-- ================================= -->
+            <!-- NOMBRE -->
+            <!-- ================================= -->
+
+            <Label text="CarMila Glow" textFill="#333333">
+
+                <font>
+                    <Font name="Mistral" size="32.0" />
+                </font>
+
+            </Label>
+
+
+            <!-- ================================= -->
+            <!-- USUARIO -->
+            <!-- ================================= -->
+
+            <Label fx:id="lblUsuario" styleClass="usuario-label" text="Usuario: admin   |   Rol: ADMIN" />
+
+
+            <!-- SEPARADOR -->
+
+            <Label text="" />
+
+
+            <!-- ================================= -->
+            <!-- INVENTARIO -->
+            <!-- ================================= -->
+
+            <Label styleClass="titulo-seccion" text="INVENTARIO" />
+
+
+            <Button fx:id="btnAbrirProductos" onAction="#abrirProductos" styleClass="menu-button" text="Productos" />
+
+            <Button fx:id="btnAbrirCategorias" onAction="#abrirCategorias" styleClass="menu-button" text="Categorías" />
+
+            <Button fx:id="btnAbrirMovimientos" onAction="#abrirMovimientos" styleClass="menu-button" text="Movimientos" />
+
+
+            <!-- ================================= -->
+            <!-- OPERACIONES -->
+            <!-- ================================= -->
+
+            <Label styleClass="titulo-seccion" text="OPERACIONES" />
+
+
+            <Button fx:id="btnAbrirCompras" onAction="#abrirCompras" styleClass="menu-button" text="Compras" />
+
+            <Button fx:id="btnAbrirVentas" onAction="#abrirVentas" styleClass="menu-button" text="Ventas" />
+
+
+            <!-- ================================= -->
+            <!-- CONTACTOS -->
+            <!-- ================================= -->
+
+            <Label styleClass="titulo-seccion" text="CONTACTOS" />
+
+
+            <Button fx:id="btnAbrirClientes" onAction="#abrirClientes" styleClass="menu-button" text="Clientes" />
+
+            <Button fx:id="btnAbrirProveedores" onAction="#abrirProveedores" styleClass="menu-button" text="Proveedores" />
+
+
+            <!-- ================================= -->
+            <!-- ADMINISTRACIÓN -->
+            <!-- ================================= -->
+
+            <Label styleClass="titulo-seccion" text="ADMINISTRACIÓN" />
+
+
+            <Button fx:id="btnUsuarios" onAction="#abrirUsuarios" styleClass="menu-button" text="Usuarios" />
+
+            <Button fx:id="btnCerrarSesion" onAction="#cerrarSesion" styleClass="logout-button" text="Cerrar sesión" />
+
+        </VBox>
+
+    </children>
+
+</AnchorPane>

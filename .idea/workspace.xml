@@ -4,14 +4,93 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff1dfa9f-e6b1-45c0-a47e-aa178a2c6f20" name="Changes" comment="" />
+    <list default="true" id="ff1dfa9f-e6b1-45c0-a47e-aa178a2c6f20" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/IntelliLang.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/PruebaProducto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/controller/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/controller/CompraController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/controller/ProveedorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/controller/VentaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/dao/ClienteDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/dao/CompraDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/dao/DetalleCompraDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/dao/DetalleVentaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/dao/MovimientoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/dao/VentaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/model/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/model/Compra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/model/DetalleCompra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/model/DetalleCompraView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/model/DetalleVenta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/model/DetalleVentaView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/model/Movimiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/model/Venta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/carmilaglow/cliente.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/carmilaglow/compra.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/carmilaglow/proveedor.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/carmilaglow/venta.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/PurebaProducto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/controller/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/controller/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/controller/MenuApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/controller/MenuApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/controller/ProductoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/dao/CategoriaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/dao/CategoriaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/dao/ProductoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/dao/ProductoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/dao/ProveedorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/dao/ProveedorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/database/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/database/Conexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/database/DatabaseInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/database/DatabaseInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/model/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/model/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/model/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/model/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/model/Proveedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/model/Proveedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/util/FormatoPrecio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carmilaglow/util/FormatoPrecio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/carmilaglow/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/carmilaglow/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/carmilaglow/producto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/carmilaglow/producto.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vista.fxml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="70" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PercyVargas&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PercyVargas/CarMilaGlow.git&quot;,
+    &quot;accountId&quot;: &quot;a447d759-617e-4beb-be8c-98e71dc0d0e5&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/consoles/db/367a2e7a-24f2-4dbb-a392-fc3bb7f363d5/console.sql" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/consoles/db/367a2e7a-24f2-4dbb-a392-fc3bb7f363d5/console_1.sql" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/module-info.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -20,27 +99,124 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8,
-  "fromUser": false
-}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000887446186055" />
+      <entry key="MS500" value="1.1711307075243884" />
+      <entry key="S2" value="2.087039816549" />
+      <entry key="S5" value="3.604278373897742" />
+      <entry key="S10" value="5.283866513758319" />
+      <entry key="S30" value="7.410372434511833" />
+      <entry key="S60" value="8.149933137960058" />
+      <entry key="M2" value="8.560140992250023" />
+      <entry key="M5" value="8.842641927859688" />
+      <entry key="M10" value="9.151351465615118" />
+      <entry key="M15" value="9.490463979722593" />
+      <entry key="M30" value="10.244914897903689" />
+      <entry key="H1" value="10.936786332484521" />
+      <entry key="H2" value="11.411077114894283" />
+      <entry key="H4" value="11.70352070276835" />
+      <entry key="D1" value="38.775404392703265" />
+      <entry key="W1" value="310.5718374877784" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="5.382417663637999E-165" />
+      <entry key="M10" value="1.467221033349524E-82" />
+      <entry key="M15" value="4.416536423712231E-55" />
+      <entry key="M30" value="1.354395697035066E-27" />
+      <entry key="H1" value="8.917169409616465E-14" />
+      <entry key="H2" value="9.690027447035767E-7" />
+      <entry key="H4" value="0.004015574153715537" />
+      <entry key="D1" value="23.608452014519532" />
+      <entry key="W1" value="319.644718434682" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9076019570050631" />
+      <entry key="MS500" value="1.1496435249097539" />
+      <entry key="S2" value="2.0777878265647165" />
+      <entry key="S5" value="3.590536656372524" />
+      <entry key="S10" value="5.268781530064245" />
+      <entry key="S30" value="7.401381817793293" />
+      <entry key="S60" value="8.144710488477768" />
+      <entry key="M2" value="8.55732437560968" />
+      <entry key="M5" value="8.841349786042247" />
+      <entry key="M10" value="9.15014040315807" />
+      <entry key="M15" value="9.489131342016885" />
+      <entry key="M30" value="10.243632461883674" />
+      <entry key="H1" value="10.935856636794536" />
+      <entry key="H2" value="11.410513609347651" />
+      <entry key="H4" value="11.707224010073126" />
+      <entry key="D1" value="62.38330139922404" />
+      <entry key="W1" value="630.2154832987156" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3Fc1jtMp4kUuLYFz5XW9PmEshNP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MenuApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PruebaProducto.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PurebaProducto.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.16206896&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PERCY VARGAS\IdeaProjects\CarMilaGlow\src\main\resources" />
+      <recent name="C:\Users\PERCY VARGAS\IdeaProjects\CarMilaGlow\src\main\resources\org\css" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.carmilaglow" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -56,11 +232,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1782359698872</updated>
-      <workItem from="1782359708800" duration="10000" />
+      <workItem from="1782359708800" duration="666000" />
+      <workItem from="1787204873806" duration="17000" />
+      <workItem from="1790647235407" duration="8355000" />
+      <workItem from="1790803868161" duration="27494000" />
+      <workItem from="1791082818084" duration="19294000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

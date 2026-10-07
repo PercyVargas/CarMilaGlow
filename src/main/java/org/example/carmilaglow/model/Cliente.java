@@ -1,30 +1,34 @@
 package org.example.carmilaglow.model;
 
-public class Proveedor {
-
+public class Cliente {
     private int id;
     private String nombre;
+    private String documento;
     private String telefono;
     private String email;
     private String direccion;
 
-    public Proveedor() {
+    public Cliente() {
     }
 
-    public Proveedor(String nombre, String telefono,
-                     String email, String direccion) {
+    public Cliente(String nombre, String documento,
+                   String telefono, String email,
+                   String direccion) {
 
         this.nombre = nombre;
+        this.documento = documento;
         this.telefono = telefono;
         this.email = email;
         this.direccion = direccion;
     }
 
-    public Proveedor(int id, String nombre, String telefono,
-                     String email, String direccion) {
+    public Cliente(int id, String nombre, String documento,
+                   String telefono, String email,
+                   String direccion) {
 
         this.id = id;
         this.nombre = nombre;
+        this.documento = documento;
         this.telefono = telefono;
         this.email = email;
         this.direccion = direccion;
@@ -44,6 +48,14 @@ public class Proveedor {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getDocumento() {
+        return documento;
+    }
+
+    public void setDocumento(String documento) {
+        this.documento = documento;
     }
 
     public String getTelefono() {

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #FFF9F5;" stylesheets="@../../../css/login.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.carmilaglow.controller.LoginController">
+
+   <children>
+
+      <VBox alignment="TOP_CENTER" spacing="8.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="25.0">
+
+
+         <!-- ================================= -->
+         <!-- LOGO -->
+         <!-- ================================= -->
+
+         <ImageView fitHeight="105.0" fitWidth="170.0" preserveRatio="true">
+
+            <image>
+               <Image url="@../../../images/Logo-CarMilaVarios.jpg" />
+            </image>
+
+         </ImageView>
+
+
+         <!-- ================================= -->
+         <!-- NOMBRE -->
+         <!-- ================================= -->
+
+         <Label text="CarMila Glow" textFill="#333333">
+
+            <font>
+               <Font name="Mistral" size="34.0" />
+            </font>
+
+         </Label>
+
+
+         <!-- ================================= -->
+         <!-- LOGIN -->
+         <!-- ================================= -->
+
+         <Label styleClass="login-title" text="INICIAR SESIÓN">
+
+
+            <VBox.margin>
+               <Insets bottom="15.0" />
+            </VBox.margin>
+
+         </Label>
+
+
+         <!-- ================================= -->
+         <!-- USUARIO -->
+         <!-- ================================= -->
+
+         <Label styleClass="field-label" text="USUARIO" />
+
+         <TextField fx:id="txtUsuario" promptText="Ingrese su usuario" styleClass="login-field" />
+
+
+         <!-- ================================= -->
+         <!-- CONTRASEÑA -->
+         <!-- ================================= -->
+
+         <Label styleClass="field-label" text="CONTRASEÑA">
+
+            <VBox.margin>
+               <Insets top="8.0" />
+            </VBox.margin>
+
+         </Label>
+
+         <PasswordField fx:id="txtPassword" promptText="Ingrese su contraseña" styleClass="login-field" />
+
+
+         <!-- ================================= -->
+         <!-- BOTÓN -->
+         <!-- ================================= -->
+
+         <Button fx:id="btnIniciarSesion" mnemonicParsing="false" onAction="#iniciarSesion" styleClass="login-button" text="INICIAR SESIÓN">
+
+            <VBox.margin>
+               <Insets top="18.0" />
+            </VBox.margin>
+
+         </Button>
+
+
+         <!-- ================================= -->
+         <!-- MENSAJE -->
+         <!-- ================================= -->
+
+         <Label fx:id="lblMensaje" styleClass="mensaje-label">
+
+            <VBox.margin>
+               <Insets top="10.0" />
+            </VBox.margin>
+
+         </Label>
+
+
+         <!-- ================================= -->
+         <!-- FRASE -->
+         <!-- ================================= -->
+
+         <Label styleClass="slogan" text="Desarrollador: Percy Ernesto Vargas Coronado">
+
+            <VBox.margin>
+               <Insets top="15.0" />
+            </VBox.margin>
+
+         </Label>
+
+      </VBox>
+
+   </children>
+
+</AnchorPane>

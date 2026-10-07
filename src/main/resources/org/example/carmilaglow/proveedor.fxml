@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.carmilaglow.controller.ProveedorController">
+   <children>
+      <BorderPane layoutX="38.0" layoutY="39.0" prefHeight="520.0" prefWidth="720.0">
+         <top>
+            <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label text="GESTIÓN DE PROVEEDORES">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnVolverAlMenu" mnemonicParsing="false" onAction="#volverAlMenu" text="&lt;- VOLVER AL MENÚ">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox prefHeight="503.0" prefWidth="753.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="110.0" prefWidth="722.0" spacing="50.0">
+                     <children>
+                        <GridPane alignment="CENTER_LEFT" prefHeight="110.0" prefWidth="497.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="354.20001220703125" minWidth="10.0" prefWidth="206.00002136230466" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="547.1999481201173" minWidth="10.0" prefWidth="361.1999786376954" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="NOMBRE:" textFill="#62066e">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="TELEFONO:" textFill="#62066e" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="EMAIL:" textFill="#62066e" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <TextField fx:id="txtNombre" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="txtTelefono" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="txtEmail" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="346.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="txtDireccion" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label text="DIRECCION:" textFill="#62066e" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets right="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <VBox alignment="CENTER_LEFT" prefHeight="110.0" prefWidth="330.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="btnAgregar" mnemonicParsing="false" onAction="#agregarProveedor" text="AGREGAR">
+                                 <font>
+                                    <Font name="Yu Gothic Light" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminarProveedor" text="ELIMINAR">
+                                 <font>
+                                    <Font name="Yu Gothic Light" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnModificar" mnemonicParsing="false" onAction="#modificarProveedor" text="MODIFICAR">
+                                 <font>
+                                    <Font name="Yu Gothic Light" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <TableView fx:id="tablaProveedores" prefHeight="237.0" prefWidth="722.0">
+                    <columns>
+                      <TableColumn fx:id="colNombre" prefWidth="197.5999420285225" text="NOMBRE" />
+                      <TableColumn fx:id="colTelefono" prefWidth="178.40003967285156" text="TELEFONO" />
+                        <TableColumn fx:id="colEmail" prefWidth="148.79998779296875" text="EMAIL" />
+                        <TableColumn fx:id="colDireccion" prefWidth="192.7999267578125" text="DIRECCIÓN" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TableView>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
